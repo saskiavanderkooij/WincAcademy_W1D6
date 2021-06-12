@@ -33,7 +33,7 @@ console.log(kleuren[kleuren.length - 1]);
 
 const catBreeds = [{
     name: "Abyssinian",
-    description: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.",
+    description: "The Abyssinian is easy to care for, and a joy to have in your home. Theyâ€™re affectionate cats and love both people and other animals.",
     dog_friendly: 4,
     energy_level: 5,
     life_span: "14 - 15",
@@ -79,15 +79,18 @@ const catBreeds = [{
 ]
 
 let laatsteKat = catBreeds[catBreeds.length - 1];
-console.log(laatsteKat.name);
+console.log("Naam kattensoort 3:", laatsteKat.name);
 
 let eersteKat = catBreeds[0];
-console.log(eersteKat.energy_level);
+console.log("Energylevel kattensoort 1:", eersteKat.energy_level);
 
 let tweedeKat = catBreeds[1];
-console.log(tweedeKat.temperament[0]);
+console.log("Eerste temperament kat 2:", tweedeKat.temperament[0]);
 
-console.log(catBreeds[catBreeds.length - 1].temperament[catBreeds[catBreeds.length - 1].temperament.length - 1]);
+console.log("Laatste temperament kat 3:", catBreeds[catBreeds.length - 1].temperament[catBreeds[catBreeds.length - 1].temperament.length - 1]);
 let derdeKat = catBreeds[2];
-console.log(derdeKat.temperament[derdeKat.temperament.length - 1]);
-console.log(derdeKat.food.favourite_food);
+console.log("Laatste temperament kat 3:", derdeKat.temperament[derdeKat.temperament.length - 1]);
+let lengteTemperamentKatDrie = catBreeds[2].temperament.length;
+console.log("Laatste temperament kat 3:", catBreeds[2].temperament[lengteTemperamentKatDrie-1])
+
+console.log("Favo voedsel van kat 3:", derdeKat.food.favourite_food);
